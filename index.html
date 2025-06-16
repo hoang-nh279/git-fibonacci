@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy số Fibonacci</title>
+</head>
+<body>
+<h1>Fibonacci</h1>
+    <script>
+        let fib = [0, 1]; // Khởi tạo hai số đầu tiên
+
+        for (let i = 2; i < 20; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2]; // Tính số tiếp theo
+        }
+
+        alert("20 số đầu tiên trong dãy Fibonacci:");
+        alert(fib.join(", "));
+    </script>
+
+</body>
+</html>

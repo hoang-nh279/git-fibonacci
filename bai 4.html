@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci chia hết cho 5</title>
+</head>
+<body>
+<script>
+  let fib = [0, 1];
+  let found = false;
+
+  while (!found) {
+    let nextFib = fib[fib.length - 1] + fib[fib.length - 2];
+    fib.push(nextFib);
+    if (nextFib % 5 === 0) {
+      found = true;
+      alert(`Số đầu tiên trong dãy Fibonacci chia hết cho 5 là: ${nextFib}`);
+    }
+  }
+</script>
+
+</body>
+</html>
